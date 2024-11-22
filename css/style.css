@@ -1,0 +1,151 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: #ffebcb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.form-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #6c63ff;
+}
+.form-section p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.form-section p a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+.form-section p a:hover {
+  text-decoration: underline;
+}
+.form-section form .form-group {
+  margin-bottom: 20px;
+}
+.form-section form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-section form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-section form .form-group .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.form-section form .form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.form-section form .form-options a {
+  font-size: 12px;
+  color: #6c63ff;
+  text-decoration: none;
+}
+.form-section form .form-options a:hover {
+  text-decoration: underline;
+}
+.form-section form .form-options input[type=checkbox] {
+  margin-right: 5px;
+}
+.form-section form .btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-section form .or-divider {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+.form-section form .social-login {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.form-section form .social-login a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.form-section form .social-login a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.form-section form .social-login a.facebook {
+  background-color: #4267b2;
+}
+.form-section form .social-login a.instagram {
+  background: radial-gradient(circle at 30% 30%, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.form-section form .social-login a.twitter {
+  background-color: #1da1f2;
+}
+
+.illustration-section {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.illustration-section img {
+  max-width: 80%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .illustration-section {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
